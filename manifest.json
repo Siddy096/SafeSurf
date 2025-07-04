@@ -1,0 +1,26 @@
+{
+    "name": "Safe Surf",
+    "description": "",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "block.html"
+    },
+    "host_permissions": ["<all_urls>"],
+    "icons": {
+        "48": "Man Saying No Emoji [Free Download iPhone Emojis].png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["updated_format_blocked.txt"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
